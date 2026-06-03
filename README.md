@@ -2,9 +2,9 @@
 
 **SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale**
 
-Open-source reproduction repository for the paper. Citation metadata is currently a placeholder and will be updated after the public paper record is available.
+Open-source reproduction repository for the paper: [arXiv:2606.03056](https://arxiv.org/abs/2606.03056).
 
-<img src="docs/agent_cli_flow.png" width="100%" alt="SkillDAG Workflow"/>
+<img src="docs/skilldag-per-episode-workflow.png" width="100%" alt="SkillDAG per-episode workflow"/>
 
 ## What is SkillDAG?
 
@@ -77,14 +77,17 @@ See:
 
 ## Citation
 
-Citation metadata is currently a placeholder and will be updated after the public paper record is available.
+If you use SkillDAG, please cite:
 
 ```bibtex
-@misc{skilldag_placeholder,
+@misc{bai2026skilldagselfevolvingtypedskill,
   title={SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale},
-  author={SkillDAG Authors},
+  author={Tong Bai and Zhenglin Wan and Pengfei Zhou and Xingrui Yu and Wangbo Zhao and Yang You and Ivor W. Tsang},
   year={2026},
-  note={Citation placeholder}
+  eprint={2606.03056},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2606.03056},
 }
 ```
 
