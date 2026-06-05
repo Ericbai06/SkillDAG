@@ -73,7 +73,6 @@ bash scripts/run_alfworld_traintest.sh
 See:
 
 - `docs/reproducing.md`
-- `REPRODUCIBILITY_CHECKLIST.md`
 
 ## Citation
 

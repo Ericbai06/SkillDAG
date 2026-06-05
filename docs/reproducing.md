@@ -165,9 +165,6 @@ Compare your scores against the expected values in `artifacts/expected/`:
 # Compare SkillsBench score
 python analysis/score_skillsbench_gos.py results/skillsbench/<exp>/ --json | \
   python3 -c "import json,sys; d=json.load(sys.stdin); print(f'R={d[\"score_R_percent\"]}%')"
-
-# Full verification checklist
-cat REPRODUCIBILITY_CHECKLIST.md
 ```
 
 ## Troubleshooting
