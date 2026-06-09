@@ -1,13 +1,52 @@
 cff-version: 1.2.0
-message: "Citation metadata is currently a placeholder and will be updated after the public paper record is available."
+message: "If you use SkillDAG, please cite the arXiv paper below."
 title: "SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale"
 authors:
-  - name: "SkillDAG Authors"
+  - family-names: "Bai"
+    given-names: "Tong"
+  - family-names: "Wan"
+    given-names: "Zhenglin"
+  - family-names: "Zhou"
+    given-names: "Pengfei"
+  - family-names: "Yu"
+    given-names: "Xingrui"
+  - family-names: "Zhao"
+    given-names: "Wangbo"
+  - family-names: "You"
+    given-names: "Yang"
+  - family-names: "Tsang"
+    given-names: "Ivor W."
 version: "0.1.0"
 date-released: "2026-05-27"
+license: "MIT"
+repository-code: "https://github.com/Ericbai06/SkillDAG"
+url: "https://arxiv.org/abs/2606.03056"
+identifiers:
+  - type: other
+    value: "arXiv:2606.03056"
+    description: "arXiv identifier"
 preferred-citation:
-  type: generic
+  type: article
   title: "SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale"
   authors:
-    - name: "SkillDAG Authors"
+    - family-names: "Bai"
+      given-names: "Tong"
+    - family-names: "Wan"
+      given-names: "Zhenglin"
+    - family-names: "Zhou"
+      given-names: "Pengfei"
+    - family-names: "Yu"
+      given-names: "Xingrui"
+    - family-names: "Zhao"
+      given-names: "Wangbo"
+    - family-names: "You"
+      given-names: "Yang"
+    - family-names: "Tsang"
+      given-names: "Ivor W."
   year: 2026
+  journal: "arXiv preprint arXiv:2606.03056"
+  url: "https://arxiv.org/abs/2606.03056"
+  identifiers:
+    - type: other
+      value: "arXiv:2606.03056"
+      description: "arXiv identifier"
