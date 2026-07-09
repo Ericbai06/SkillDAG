@@ -81,7 +81,7 @@ If you use SkillDAG, please cite:
 ```bibtex
 @misc{bai2026skilldagselfevolvingtypedskill,
   title={SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale},
-  author={Tong Bai and Zhenglin Wan and Pengfei Zhou and Xingrui Yu and Wangbo Zhao and Yang You and Ivor W. Tsang},
+  author={Tong Bai and Zhenglin Wan and Pengfei Zhou and Xingrui Yu and Yang You and Ivor W. Tsang},
   year={2026},
   eprint={2606.03056},
   archivePrefix={arXiv},
