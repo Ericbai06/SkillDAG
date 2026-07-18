@@ -37,9 +37,9 @@ skilldag help
    `pip install -e ".[repro,alfworld]"`
 2. Runs the bundled data downloader → `data/skillsets/skills_{200,500,1000,2000}/`,
    `data/gos_workspace/...`, `data/tasks/tasks/...`
-3. Builds `data/alfworld_skills/`, a narrow symlink pool containing only the
-   37 ALFWorld skills used by `skillgraph_alfworld.json` when a packaged pool is
-   not already present
+3. Builds `data/alfworld_skills/`, a narrow pool containing the 37
+   `alfworld-*` skills from `skills_1000.tar.gz` used by
+   `skillgraph_alfworld.json` when a packaged pool is not already present
 4. Downloads published SkillDAG graph artifacts into `data/skilldag_graphs/`
 
 If you prefer not to use the published SkillDAG `skillgraph.json` files,
@@ -119,6 +119,27 @@ bash scripts/run_alfworld.sh                                              # full
 ```
 
 Outputs land in `results/alfworld/<exp_name>/`.
+
+The paper-aligned run uses `SPLIT=dev`, which maps to ALFWorld
+`valid_seen`, with `MAX_GAMES=140` and `MAX_STEPS=30`. Its skill source is the
+published
+[`skills_1000.tar.gz`](https://huggingface.co/datasets/davidliuk/graph-of-skills-data/blob/main/skills_1000.tar.gz):
+use only the 37 `alfworld-*` directories from that archive through
+`data/alfworld_skills/`, not the full 1,000-skill pool or a separately
+generated 37-skill set. The GoS
+[`gos_workspace_skills_1000_v1.tar.gz`](https://huggingface.co/datasets/davidliuk/graph-of-skills-data/blob/main/gos_workspace_skills_1000_v1.tar.gz)
+artifact indexes the same 37 ALFWorld skills for this benchmark. Verify the
+local pool before running:
+
+```bash
+find -L data/alfworld_skills -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l  # 37
+```
+
+Some of those skill bodies describe placement as `put X in/on Y`, while this
+runner's TextWorld action grammar uses `move X to Y`. Before calling
+`env.step`, the structured action parser converts `put X in/on Y`,
+`put X in Y`, and `put X on Y` to `move X to Y`; all other actions are left
+unchanged.
 
 ## 5. Analyze
 

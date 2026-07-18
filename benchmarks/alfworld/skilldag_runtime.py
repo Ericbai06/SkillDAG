@@ -296,9 +296,17 @@ def parse_turn_payload(response: str) -> tuple[dict | None, str | None]:
     if action_present == command_present:
         return None, "Provide exactly one of `action` or `command`."
 
+    if action_present:
+        action = re.sub(
+            r"^put\s+(.+?)\s+(?:in/on|in|on)\s+(.+)$",
+            r"move \1 to \2",
+            action.strip(),
+            flags=re.IGNORECASE,
+        )
+
     return {
         "thought": thought.strip(),
-        "action": action.strip() if action_present else "",
+        "action": action if action_present else "",
         "command": command.strip() if command_present else "",
     }, None
 
