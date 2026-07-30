@@ -2,7 +2,7 @@
 
 **SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale**
 
-Open-source reproduction repository for the paper: [arXiv:2606.03056](https://arxiv.org/abs/2606.03056).
+Official implementation of the paper [arXiv:2606.03056](https://arxiv.org/abs/2606.03056).
 
 <img src="docs/skilldag-per-episode-workflow.png" width="100%" alt="SkillDAG per-episode workflow"/>
 
